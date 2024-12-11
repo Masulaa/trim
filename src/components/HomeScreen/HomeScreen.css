@@ -1,0 +1,55 @@
+.logoup {
+  position: absolute;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.headline {
+  padding-top: 6.5rem;
+  margin-left: 1.4rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.container-search {
+  display: flex;
+  justify-content: center;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
+.search-bar {
+  background: rgba(30, 31, 34, 0.85) url("../../images/search.png") no-repeat
+    12px center; /* Pozicija ikonice */
+  background-size: 16px 16px; /* Manja ikonica */
+  border: none;
+  outline: none;
+  margin-top: 2rem;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.34);
+  padding: 13px 20px 13px 35px;
+  width: 100%;
+  transition: background-image 0.3s ease;
+}
+
+.search-bar:focus {
+  box-shadow: none;
+  background-image: url("../../images/searchred.png");
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
