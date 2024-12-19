@@ -1,0 +1,115 @@
+.pic-and-details {
+  position: relative; /* Omogućava pozicioniranje unutar roditelja */
+  display: flex;
+  justify-content: center;
+  margin-top: 1.3rem;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+  border-radius: 29px;
+}
+
+.product-picture {
+  border-radius: 29px;
+  width: 100%;
+  height: 24.375rem;
+  object-fit: cover;
+}
+
+.product-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 6.875rem;
+  border-radius: 29px;
+  background: rgba(237, 27, 36, 0.47);
+  backdrop-filter: blur(2px);
+}
+
+.product-name-details {
+  margin-left: 2rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 57px;
+  color: #ffffff;
+}
+
+.product-description-details {
+  margin-left: 2rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.51);
+}
+
+.product-other-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-details-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+.product-details-description-headline {
+  margin-top: 1.5rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.83);
+}
+
+.product-details-description-text {
+  margin-top: 1.5rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.83);
+}
+
+.product-price-and-confirm {
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-price-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.51);
+}
+
+.product-price-show {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}

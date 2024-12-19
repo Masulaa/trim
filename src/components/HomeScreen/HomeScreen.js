@@ -5,6 +5,7 @@ import menu from "../../images/menu.png";
 import info from "../../images/info.png";
 import biljeske from "../../images/biljeske.png";
 import home from "../../images/home.png";
+import { useNavigate } from "react-router-dom";
 
 const HomeScreen = () => {
   const [activeCategory, setActiveCategory] = useState("Kafe");
@@ -12,6 +13,8 @@ const HomeScreen = () => {
   const [hideFooter, setHideFooter] = useState(false);
   const [isFooterVisible, setIsFooterVisible] = useState(false);
   const buttonsRef = useRef([]);
+
+  const navigate = useNavigate();
 
   const categories = useMemo(
     () => ["Kafe", "Bezalkoholno", "Piva", "Alkoholno"],
@@ -103,7 +106,12 @@ const HomeScreen = () => {
                   <span id="eurosign">€</span>
                   {drink.price.toFixed(2)}
                 </p>
-                <button className="info-button">
+                <button
+                  className="info-button"
+                  onClick={() => {
+                    navigate(`/product/${drink.id}`);
+                  }}
+                >
                   <img src={info} alt="info" />
                 </button>
               </div>

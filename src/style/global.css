@@ -7,3 +7,24 @@
 p {
   margin: 0;
 }
+
+.primary-button {
+  background: #ed1b24;
+  border-radius: 10px;
+  font-family: "Poppins";
+  padding: 0;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  border: 0;
+  width: 15rem;
+  height: 3.6rem;
+}
+
+#eurosign {
+  color: #00a652;
+}
