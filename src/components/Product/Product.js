@@ -3,7 +3,7 @@ import kafavelika from "../../images/kafa-velika.png";
 
 const Product = () => {
   return (
-    <div>
+    <div className="product-page">
       <div className="pic-and-details">
         <div className="product-details">
           <p className="product-name-details">Kapućino</p>
